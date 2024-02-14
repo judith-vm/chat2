@@ -1,5 +1,5 @@
 // Make connection
-var socket = io.connect('http://localhost:3001');
+var socket = io.connect(process.env.SERVER_URL || 'http://localhost:3001');
 
 // Query DOM
 var message = document.getElementById('message'),
